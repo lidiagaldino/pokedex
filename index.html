@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto+Mono:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/icone.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/main.js"></script>
+    <title>Pokémon</title>
+</head>
+<body>
+    <header>
+        <img src="./images/icon.png" alt="logo" class="logo">
+
+        <nav>
+            <ul class="nav">
+                <li><a href="#home"> HOME</a></li>
+                <li><a href="#sobre"> SOBRE</a></li>
+                <li><a href="#pokedex"> POKÉDEX</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home"></section>
+
+    <section id="sobre">
+        <h1>SOBRE</h1>
+
+        <div class="container">
+            <img class="ash" src="./images/ash.jpg" alt="">
+            <p class="text">Pokémon é uma franquia de mídia que pertence a The Pokémon Company, tendo sido criada por Satoshi Tajiri em 1995. Ela é centrada em criaturas ficcionais chamadas "Pokémon", que os seres humanos capturam e os treinam para lutarem entre si com seus ataques de diversos tipos. Atualmente, a franquia se estende em jogos, cartas colecionáveis, série de televisão, além de filmes, mangás e brinquedos.</p>
+        </div>
+    </section>
+
+    <section id="pokedex">
+        <h1 class="poketittle">POKÉDEX</h1>
+        <div class="pokedex-container">
+            <img src="#" alt="pokemon" class="poke-image">
+    
+            <h1 class="poke-data">
+                <span class="poke-number"></span> - 
+                <span class="poke-name"></span>
+            </h1>
+    
+            <form class="form">
+                <input
+                  type="search"
+                  class="input-search"
+                  placeholder="Pokémon Name or Number"
+                  required
+                />
+              </form>
+    
+            <div class="button-container">
+                <button class="btn-prev button">Prev &lt;</button>
+                <button class="btn-next button">Next &gt;</button>
+            </div>
+    
+            <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+        </div>
+    </section>
+ 
+</body>
+</html>

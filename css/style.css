@@ -1,0 +1,146 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Mono';
+}
+
+header{
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    z-index: 999;
+}
+.logo{
+    width: 60px;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+}
+
+section{
+    height: auto;
+}
+#home{
+    height: 90vh;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: cover;
+    display: flex;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    background-color: rgb(203, 255, 160);
+    width: 100vw;
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    padding: 10%;
+}
+.ash{
+    width: 40%;
+}
+.text{
+    text-align: center;
+    font-size: 100%;
+}
+
+#pokedex{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(88, 109, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+.pokedex-container{
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    padding: 20px;
+}
+.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+.poke-image{
+    position: absolute;
+    bottom: 50%;
+    left: 34%;
+    height: 15%;
+}
+.poke-data{
+    position: absolute;
+    font-weight: 500;
+    color: #aaa;
+    top: 53%;
+    left: 26%;
+    font-size: clamp(0.5rem, 5vw, 1rem);
+}
+.poke-name{
+    color: #3a444d;
+    text-transform: capitalize;
+}   
+.form{
+    position: absolute;   
+    width: 65%;
+    top: 67%;
+    left: 15%;
+}
+.input-search{
+    width: 100%;
+    padding: 2%;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #3a444d;
+    font-size: clamp(0.5rem, 5vw, 1rem);
+    box-shadow: -2px 3px 0 #888, -4px 6px 0 #333
+}
+.button-container{
+    position: absolute;
+    bottom: 12%;
+    left: 30%;
+    width: 65%;
+    display: flex;
+    gap: 20px;
+}
+.button {
+    width: 25%;
+    padding: 2%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(0.5rem, 2vw, 0.8rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}  
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+@media(max-width: 790px){
+    .container{
+        flex-direction: column;
+    }
+}
+

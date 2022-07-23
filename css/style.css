@@ -136,7 +136,20 @@ section{
 .button:active {
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
+}   
+
+@media(max-width: 900px){
+    .pokedex-container{
+        width: 50%;
+    }
 }
+
+@media(max-width: 600px){
+    .pokedex-container{
+        width: 80%;
+    }
+}
+
 
 @media(max-width: 790px){
     .container{

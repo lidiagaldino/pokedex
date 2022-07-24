@@ -6,6 +6,12 @@ body{
     font-family: 'Roboto Mono';
 }
 
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
 header{
     height: 70px;
     width: 100vw;
@@ -23,6 +29,17 @@ header{
 .nav{
     display: flex;
     gap: 10px;
+}
+a {
+    box-shadow: inset 0 0 0 0 #f7e600;
+    color: #353535;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #f7e600;;
 }
 
 section{
@@ -42,7 +59,7 @@ section{
     flex-direction: column;
     align-items: center;
     padding-top: 10%;
-    background-color: rgb(203, 255, 160);
+    background-color: rgb(161, 207, 123);
     width: 100vw;
 }
 .container{
@@ -63,7 +80,7 @@ section{
 #pokedex{
     width: 100vw;
     height: auto;
-    background-color: rgb(88, 109, 226);
+    background-color: rgb(65, 84, 189);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,13 +105,14 @@ section{
 .poke-data{
     position: absolute;
     font-weight: 500;
-    color: #aaa;
+    color: rgb(136, 135, 135);
     top: 53%;
     left: 26%;
     font-size: clamp(0.5rem, 5vw, 1rem);
 }
 .poke-name{
-    color: #3a444d;
+    color: #192c3a;
+    font-weight: 800;
     text-transform: capitalize;
 }   
 .form{
@@ -135,7 +153,7 @@ section{
 }  
 .button:active {
     box-shadow: inset -4px 4px 0 #222;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }   
 
 @media(max-width: 900px){

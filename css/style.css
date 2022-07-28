@@ -168,6 +168,23 @@ section{
     }
 }
 
+@media (min-width: 3000px) {
+    .pokedex-container{
+        width: 10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pokedex-container{
+        width: 25%;
+    }
+}
+
+@media (min-width: 5000px) {
+    .pokedex-container{
+        width: 8%;
+    }
+}
 
 @media(max-width: 790px){
     .container{
